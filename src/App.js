@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import GlobalStyled from "./styles/global";
+import Home from "../src/pages/Home/Home";
 
-function App() {
+export default function App() {
   return (
     <div>
-      Hello World!
+      <Home />
+      <GlobalStyled />
     </div>
   );
 }
-
-export default App;
