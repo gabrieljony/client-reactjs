@@ -7,10 +7,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const mode = process.env.NODE_ENV || 'development'
 const isDev = mode === 'development'
 
-let SERVICE_URL = JSON.stringify('http://localhost:8080')
+let SERVICE_URL = JSON.stringify('http://localhost:4000')
 
 if (process.env.NODE_ENV === 'production') {
-	SERVICE_URL = JSON.stringify('http://enderecoproducao.com.br')
+	SERVICE_URL = JSON.stringify('http://www.enderecoparaproducao.com.br')
 }
 
 module.exports = {
