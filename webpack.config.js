@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
 	devtool: 'source-map',
 
-	entry: path.resolve(__dirname, 'src', 'index.jsx'),
+	entry: path.resolve(__dirname, 'src', 'index.js'),
 
 	output: {
 		path: path.resolve(__dirname, 'build'),
@@ -68,7 +68,7 @@ module.exports = {
 
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname, 'src', 'template.html'),
+			template: path.join(__dirname, 'public', 'index.html'),
 			filename: 'index.html',
 	        minify: {
 		        removeAttributeQuotes: true,
